@@ -1,0 +1,30 @@
+{
+  "name": "docoli/ultimate-tic-tac-toe",
+  "description": "Example, quick and dirty, ultimate tic-tac-toe game with websockets in php",
+  "keywords": [
+    "php",
+    "websockets",
+    "game",
+    "tic-tac-toe",
+    "ultimate"
+  ],
+  "authors": [
+    {
+      "name": "Dominic Linke"
+    }
+  ],
+  "require": {
+    "php": ">=8.1.0",
+    "cboden/ratchet": "^0.4.4",
+    "twbs/bootstrap": "^5.3",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "UltimateTicTacToe\\": "src/"
+    }
+  },
+  "scripts": {
+    "start-server": "php bin/socket-server.php"
+  }
+}
