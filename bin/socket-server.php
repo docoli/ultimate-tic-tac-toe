@@ -17,13 +17,19 @@ $rooms = [
     3 => new Room(3),
 ];
 
-$server = IoServer::factory(
-    new HttpServer(
-        new WsServer(
-            new Server($rooms)
-        )
-    ),
-    WS_PORT
-);
+echo 'Starting socket server on port ' . WS_PORT . ' ...' . PHP_EOL;
+try {
+    $server = IoServer::factory(
+        new HttpServer(
+            new WsServer(
+                new Server($rooms)
+            )
+        ),
+        WS_PORT
+    );
 
-$server->run();
+    echo 'Socket Server Started. Waiting for connections.' . PHP_EOL;
+    $server->run();
+} catch (Exception $e) {
+    echo 'Something went wrong while starting socket server: ' . $e->getMessage() . PHP_EOL;
+}

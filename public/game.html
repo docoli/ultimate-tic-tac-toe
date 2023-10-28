@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Game</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/dist/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="assets/dist/css/app.css">
+</head>
+
+<body>
+<div class="container">
+
+    <h1 id="title"></h1>
+    <div class="row">
+        <div class="col-md-3">
+            <button id="join" class="btn btn-success">Join Room</button>
+            <button id="new" disabled class="btn btn-new">New Game</button>
+        </div>
+        <div class="col-md-9" id="error">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            You are player <span id="yourChecker"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+
+            <table class="outer" id="tictac">
+                <tr>
+                    <td data-id="1">
+                        <table class="inner">
+                            <tr>
+                                <td data-id="1"></td>
+                                <td data-id="2"></td>
+                                <td data-id="3"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="4"></td>
+                                <td data-id="5"></td>
+                                <td data-id="6"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="7"></td>
+                                <td data-id="8"></td>
+                                <td data-id="9"></td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <td data-id="2">
+                        <table class="inner">
+                            <tr>
+                                <td data-id="1"></td>
+                                <td data-id="2"></td>
+                                <td data-id="3"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="4"></td>
+                                <td data-id="5"></td>
+                                <td data-id="6"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="7"></td>
+                                <td data-id="8"></td>
+                                <td data-id="9"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td data-id="3">
+                        <table class="inner">
+                            <tr>
+                                <td data-id="1"></td>
+                                <td data-id="2"></td>
+                                <td data-id="3"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="4"></td>
+                                <td data-id="5"></td>
+                                <td data-id="6"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="7"></td>
+                                <td data-id="8"></td>
+                                <td data-id="9"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-id="4">
+                        <table class="inner">
+                            <tr>
+                                <td data-id="1"></td>
+                                <td data-id="2"></td>
+                                <td data-id="3"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="4"></td>
+                                <td data-id="5"></td>
+                                <td data-id="6"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="7"></td>
+                                <td data-id="8"></td>
+                                <td data-id="9"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td data-id="5">
+                        <table class="inner">
+                            <tr>
+                                <td data-id="1"></td>
+                                <td data-id="2"></td>
+                                <td data-id="3"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="4"></td>
+                                <td data-id="5"></td>
+                                <td data-id="6"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="7"></td>
+                                <td data-id="8"></td>
+                                <td data-id="9"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td data-id="6">
+                        <table class="inner">
+                            <tr>
+                                <td data-id="1"></td>
+                                <td data-id="2"></td>
+                                <td data-id="3"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="4"></td>
+                                <td data-id="5"></td>
+                                <td data-id="6"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="7"></td>
+                                <td data-id="8"></td>
+                                <td data-id="9"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-id="7">
+                        <table class="inner">
+                            <tr>
+                                <td data-id="1"></td>
+                                <td data-id="2"></td>
+                                <td data-id="3"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="4"></td>
+                                <td data-id="5"></td>
+                                <td data-id="6"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="7"></td>
+                                <td data-id="8"></td>
+                                <td data-id="9"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td data-id="8">
+                        <table class="inner">
+                            <tr>
+                                <td data-id="1"></td>
+                                <td data-id="2"></td>
+                                <td data-id="3"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="4"></td>
+                                <td data-id="5"></td>
+                                <td data-id="6"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="7"></td>
+                                <td data-id="8"></td>
+                                <td data-id="9"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td data-id="9">
+                        <table class="inner">
+                            <tr>
+                                <td data-id="1"></td>
+                                <td data-id="2"></td>
+                                <td data-id="3"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="4"></td>
+                                <td data-id="5"></td>
+                                <td data-id="6"></td>
+                            </tr>
+                            <tr>
+                                <td data-id="7"></td>
+                                <td data-id="8"></td>
+                                <td data-id="9"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+</div> <!-- /container -->
+
+<script src="assets/dist/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="assets/dist/js/app.js"></script>
+</body>
+</html>
