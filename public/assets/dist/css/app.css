@@ -1,20 +1,31 @@
+/* Styling the outer table for layout */
+.outer {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
 .outer td {
-    background: lightgrey;
-    height: 400px;
-    width: 400px;
-    text-align: center;
-    vertical-align: center;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+/* Styling the inner Tic-Tac-Toe grids */
+.inner {
+    border-collapse: collapse;
 }
 
 .inner td {
-    background: darkgrey;
-    height: 130px;
-    width: 130px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
     text-align: center;
-    vertical-align: center;
+    vertical-align: middle;
+    font-size: 1.5em;
     cursor: pointer;
 }
 
-.inner, .outer{
-    border-collapse: unset;
+/* Optional: Center the content */
+#tictac {
+    text-align: center;
+    margin: 0 auto;
 }
