@@ -108,7 +108,7 @@ $('#tictac tr td').on('click', function () {
                 {
                     method: 'check',
                     roomId: room,
-                    field: self.parent('td').data('field'),
+                    field: self.parents('td').first().data('field'),
                     fieldNumber: self.data('id')
                 }
             )
